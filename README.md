@@ -8,4 +8,4 @@
 
 ## Regras dos Hooks
 
-[Regras](https://pt-br.reactjs.org/docs/hooks-rules.html)
+[Regras dos hooks](https://pt-br.reactjs.org/docs/hooks-rules.html)
