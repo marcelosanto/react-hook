@@ -5,3 +5,7 @@
 ## [useState()](https://pt-br.reactjs.org/docs/hooks-state.html)
 
 ![](src/images/useState.jpg)
+
+## Regras dos Hooks
+
+[Regras](https://pt-br.reactjs.org/docs/hooks-rules.html)
