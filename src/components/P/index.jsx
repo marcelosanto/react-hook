@@ -1,5 +1,5 @@
 import { useContext } from 'react'
-import { GlobalContext } from '../../contexts/App'
+import { GlobalContext } from '../../contexts/AppContext'
 
 // eslint-disable-next-line react/prop-types
 export const P = () => {
