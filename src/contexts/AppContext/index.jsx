@@ -1,12 +1,18 @@
-import { createContext, useState } from 'react'
+import P from 'prop-types'
+import { createContext, useReducer } from 'react'
+import { reducer } from '../../reducers/reducer'
 
 import { globalState } from './data'
 
 export const GlobalContext = createContext()
 
-// eslint-disable-next-line react/prop-types
 export const AppContext = ({ children }) => {
-    const [state, setState] = useState(globalState)
+    // eslint-disable-next-line no-unused-vars
+    const [state, dispatch] = useReducer(reducer, globalState)
 
-    return <GlobalContext.Provider value={{ state, setState }}>{children}</GlobalContext.Provider>
+    return <GlobalContext.Provider value={{ state, dispatch }}>{children}</GlobalContext.Provider>
+}
+
+AppContext.propTypes = {
+    children: P.node,
 }

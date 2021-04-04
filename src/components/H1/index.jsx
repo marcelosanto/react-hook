@@ -7,5 +7,6 @@ export const H1 = () => {
     const {
         state: { title },
     } = theContext
-    return <h1>{title}</h1>
+
+    return <h1 onClick={() => theContext.dispatch({ type: 'CHANGE_TITLE' })}>{title}</h1>
 }
